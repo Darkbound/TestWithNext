@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const StyledCardBox = styled((props) => <div {...props} />)`
+  display:inline-block ;
   width:33vw;
   height:170px;
   background-color: #f5f5f5;

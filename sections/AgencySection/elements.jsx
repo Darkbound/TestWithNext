@@ -6,9 +6,9 @@ import BackgroundImage from '../../resources/background.png'
 import { CardContainer } from "../../components/Containers";
 
 export const StyledImageContainer = styled.div`
-  width:420px;
+  width:300px;
   height:610px;
-  margin-left:15%;
+  margin-left:240px;
   @media(max-width:1024px){
     margin-left:auto;
     margin-right:auto;
@@ -17,10 +17,6 @@ export const StyledImageContainer = styled.div`
 `;
 
 export const StyledContainer = styled((props) => <SectionContainer {...props} />)`
-  background-image: url(${BackgroundImage?.src});
-  background-repeat: no-repeat;
-  background-position:left 120px;
-  background-size:58%;
   width:100%;
   display:block;
   align-items: center;
@@ -33,14 +29,17 @@ export const StyledContainer = styled((props) => <SectionContainer {...props} />
   };
 `;
 export const StyledSectionContainer = styled(({ height, ...props }) => <SectionContainer {...props} />)`
-  margin-right:auto;
-  min-width:100%;
+  background-image: url(${BackgroundImage?.src});
+  background-repeat: no-repeat;
+  background-position:left 20px;
+  background-size:960px;
+  margin-bottom: 150px;
+  width: %;
   min-height:600px;
   margin-top:30px;
   @media(max-width:1024px){
     width:100%;
     display:block;
-    margin-bottom: 150px;
     text-align:center;
   };
 `;
@@ -55,7 +54,7 @@ export const StyledDescription = styled((props) => <SectionSubheading {...props}
 
 export const StyledCardContainer = styled((props) => <CardContainer {...props} />)`
   margin-top:10px;
-  margin-left:90px;
+  margin-left:30px;
   height:100%;
   @media(max-width:1024px){
     margin-left:auto;

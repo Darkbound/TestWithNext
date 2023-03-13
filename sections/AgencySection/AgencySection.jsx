@@ -45,7 +45,7 @@ export const AgencySection = ({ title, description, image }) => {
       <StyledDescription>{description}</StyledDescription>
       <StyledSectionContainer>
         <StyledImageContainer>
-          <Image src={image.src} alt='video image' width={420} height={610} />
+          <Image src={image.src} alt='video image' width={310} height={610} />
         </StyledImageContainer>
         <StyledCardContainer>
           <Card {...firstCardProps} activeSelection={activeSelection} changeActiveSelection={changeActiveSelection} />

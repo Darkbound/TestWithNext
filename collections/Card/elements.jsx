@@ -51,7 +51,7 @@ export const StyledImageContainer = styled.div`
   margin-right:45px;
 `
 export const StyledTextContainer = styled((props) => <CardTextContainer {...props} />)`
-  padding-top:15px;
+  padding-top:10px;
 `
 export const StyledCardDescription = styled((props) => <CardDescription{...props} />)`
   margin:0;
