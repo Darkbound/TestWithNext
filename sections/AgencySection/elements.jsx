@@ -34,9 +34,13 @@ export const StyledSectionContainer = styled(({ height, ...props }) => <SectionC
   background-position:left 20px;
   background-size:960px;
   margin-bottom: 150px;
-  width: %;
+  width: 85%;
   min-height:600px;
   margin-top:30px;
+  @media(min-width:1024px) and (max-width:1400px){
+    margin-right:0;
+    width:115%;
+  }
   @media(max-width:1024px){
     width:100%;
     display:block;

@@ -52,7 +52,7 @@ export const StyledCardTitle = styled((props) => <p {...props} />)`
 `
 export const StyledCardDescription = styled((props) => <p {...props} />)`
     font-family: Poppins;
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.5rem;
     font-weight: 400;
 `
