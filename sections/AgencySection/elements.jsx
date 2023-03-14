@@ -30,7 +30,6 @@ export const StyledSectionContainer = styled(({ height, ...props }) => <SectionC
   margin-bottom: 150px;
   justify-content:center;
   margin-top:30px;
-
   @media(max-width:1024px){
     display:block;
   };
@@ -49,6 +48,7 @@ export const StyledCardContainer = styled((props) => <CardContainer {...props} /
   margin-left:30px;
   height:100%;
   @media(max-width:1024px){
+    width:500px;
     margin-left:auto;
     margin-right:auto;
   }
