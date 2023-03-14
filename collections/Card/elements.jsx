@@ -54,7 +54,8 @@ export const StyledTextContainer = styled((props) => <CardTextContainer {...prop
 `
 export const StyledCardDescription = styled((props) => <CardDescription{...props} />)`
   margin:0;
-  margin-right:20px
+  margin-right:20px;
+  padding-top:10px;
 `
 export const StrongText = styled.span`
   font-weight:bold;

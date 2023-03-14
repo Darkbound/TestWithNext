@@ -9,7 +9,7 @@ export const StyledImageContainer = styled.div`
   position:relative;
   width:370px;
   height:610px;
-  margin-left:240px;
+  margin-left:140px;
   margin-bottom:50px;
   @media(max-width:1024px){
     width:450px;
@@ -28,10 +28,10 @@ export const StyledContainer = styled((props) => <SectionContainer {...props} />
 export const StyledSectionContainer = styled(({ height, ...props }) => <SectionContainer {...props} />)`
   background-image: url(${BackgroundImage?.src});
   background-repeat: no-repeat;
-  background-position:left 20px;
-  background-size:960px;
+  background-position:-120px 20px;
+  background-size:1100px;
   margin-bottom: 150px;
-  width: 100%;
+  width: 80%;
   min-height:600px;
   margin-top:30px;
   @media(max-width:1024px){
