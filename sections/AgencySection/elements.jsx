@@ -7,12 +7,10 @@ import { CardContainer } from "../../components/Containers";
 
 export const StyledImageContainer = styled.div`
   position:relative;
-  width:370px;
+  width: clamp(370px,400px, 450px);
   height:610px;
-  margin-left:140px;
   margin-bottom:50px;
   @media(max-width:1024px){
-    width:450px;
     margin-left:auto;
     margin-right:auto;
   }
@@ -21,18 +19,16 @@ export const StyledImageContainer = styled.div`
 export const StyledContainer = styled((props) => <SectionContainer {...props} />)`
   width:100%;
   display:block;
-  align-items: center;
   text-align:center;
   margin-bottom: 150px;
 `;
 export const StyledSectionContainer = styled(({ height, ...props }) => <SectionContainer {...props} />)`
   background-image: url(${BackgroundImage?.src});
   background-repeat: no-repeat;
-  background-position:-120px 20px;
-  background-size:1100px;
+  background-position: -50px 50px;
+  background-size:950px;
   margin-bottom: 150px;
-  width: 80%;
-  min-height:600px;
+  justify-content:center;
   margin-top:30px;
   @media(max-width:1024px){
     display:block;

@@ -33,12 +33,12 @@ export const StyledCardBoxContainer = styled(({ ...props }) => <CardBoxContainer
     text-decoration: underline;
   }
   @media(max-width:1024px){
-    width:95%;
+    width:96%;
     :nth-child(2){
-      width:97%;
+      width:98%;
   };
     &:nth-child(3){
-      width:99%;
+      width:100%;
   };
 }
 `
