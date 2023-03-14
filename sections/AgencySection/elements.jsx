@@ -25,11 +25,12 @@ export const StyledContainer = styled((props) => <SectionContainer {...props} />
 export const StyledSectionContainer = styled(({ height, ...props }) => <SectionContainer {...props} />)`
   background-image: url(${BackgroundImage?.src});
   background-repeat: no-repeat;
-  background-position: -50px 50px;
+  background-position: -30px 50px;
   background-size:950px;
   margin-bottom: 150px;
   justify-content:center;
   margin-top:30px;
+
   @media(max-width:1024px){
     display:block;
   };
