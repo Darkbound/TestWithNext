@@ -12,12 +12,11 @@ export const StyledImageContainer = styled.div`
 `;
 
 export const StyledContainer = styled((props) => <SectionContainer {...props} />)`
-  width:100%;
   display:grid;
   place-items:center;
-  margin-bottom: 150px;
 `;
 export const StyledSectionContainer = styled(({ height, ...props }) => <SectionContainer {...props} />)`
+  padding:25px;
   justify-content:center;
   flex-wrap:wrap;
   gap:60px;
@@ -36,6 +35,5 @@ export const StyledDescription = styled((props) => <SectionSubheading {...props}
 `;
 
 export const StyledCardContainer = styled((props) => <CardContainer {...props} />)`
-  margin-top:10px;
   height:100%;
 `
