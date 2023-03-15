@@ -9,30 +9,22 @@ export const StyledImageContainer = styled.div`
   position:relative;
   width: clamp(370px,400px, 450px);
   height:610px;
-  margin-bottom:50px;
-  @media(max-width:1024px){
-    margin-left:auto;
-    margin-right:auto;
-  }
 `;
 
 export const StyledContainer = styled((props) => <SectionContainer {...props} />)`
   width:100%;
-  display:block;
-  text-align:center;
+  display:grid;
+  place-items:center;
   margin-bottom: 150px;
 `;
 export const StyledSectionContainer = styled(({ height, ...props }) => <SectionContainer {...props} />)`
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:60px;
   background-image: url(${BackgroundImage?.src});
   background-repeat: no-repeat;
   background-position: -30px 50px;
   background-size:950px;
-  margin-bottom: 150px;
-  justify-content:center;
-  margin-top:30px;
-  @media(max-width:1024px){
-    display:block;
-  };
 `;
 
 export const StyledTitle = styled((props) => <SectionBigHeading {...props} />)`
@@ -45,11 +37,5 @@ export const StyledDescription = styled((props) => <SectionSubheading {...props}
 
 export const StyledCardContainer = styled((props) => <CardContainer {...props} />)`
   margin-top:10px;
-  margin-left:30px;
   height:100%;
-  @media(max-width:1024px){
-    width:500px;
-    margin-left:auto;
-    margin-right:auto;
-  }
 `

@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 export const StyledCardBox = styled((props) => <div {...props} />)`
   display:inline-block ;
-  width:34vw;
+  width:500px;
   height:170px;
   background-color: #f5f5f5;
   border-radius:10px;
   :nth-child(2){
-  width:36vw;
+  width:525px;
 };
 &:nth-child(3){
-  width:38vw;
+  width:550px;
 };
 `
