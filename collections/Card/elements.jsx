@@ -32,15 +32,6 @@ export const StyledCardBoxContainer = styled(({ ...props }) => <CardBoxContainer
     color:#006efd !important;
     text-decoration: underline;
   }
-  @media(max-width:1024px){
-    width:96%;
-    :nth-child(2){
-      width:98%;
-  };
-    &:nth-child(3){
-      width:100%;
-  };
-}
 `
 export const StyledImageContainer = styled.div`
   align-items:center;
