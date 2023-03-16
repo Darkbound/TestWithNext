@@ -10,18 +10,13 @@ import {
 
 import Image from 'next/image'
 
+
 export const Card = ({ activeSelection, changeActiveSelection, ...card }) => {
   const isActive = card.title === activeSelection
-  const { highlightedSentences, description } = card
+  const { highlightedIndexes, description } = card
 
-  const MappedDescrption = highlightedSentences.map((sentence) => {
-    if (!description.includes(sentence)) return
-
-    const splitedDesc = description.split(sentence)
-    splitedDesc.splice(1, 0, <StrongText>{sentence}</StrongText>)
-    return splitedDesc
-
-  })
+  const MappedDescription = description.split(' ')
+  const shouldBeBold = (idx) => highlightedIndexes.includes(idx)
 
   return (
     <StyledCardBoxContainer isActive={isActive} onClick={() => changeActiveSelection(card.title)}>
@@ -31,7 +26,7 @@ export const Card = ({ activeSelection, changeActiveSelection, ...card }) => {
       <StyledTextContainer>
         <StyledCardTitle>{card.title}</StyledCardTitle>
         <StyledCardDescription>
-          {MappedDescrption}
+          {MappedDescription.map((word, idx) => shouldBeBold(idx) ? <StrongText>{word + ' '}</StrongText> : word + ' ')}
         </StyledCardDescription>
       </StyledTextContainer>
     </StyledCardBoxContainer>
