@@ -4,5 +4,5 @@ export const StyledCardContainer = styled((props) => <div {...props} />)`
 display:grid;
 gap:40px;
 height:500px;
-width:550px;
+width:520px;
 `

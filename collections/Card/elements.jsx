@@ -42,11 +42,11 @@ export const StyledImageContainer = styled.div`
 `
 
 export const StyledTextContainer = styled((props) => <CardTextContainer {...props} />)`
-padding-right:4.2em;
 padding-top:1rem;
 `
 
 export const StyledCardDescription = styled((props) => <CardDescription{...props} />)`  
+  padding-right:3.6rem;
   line-height: 1.5;
   margin-top:.35em;
   font-size:1.05rem
@@ -58,5 +58,5 @@ export const SpecialChar = styled.span`
 `
 
 export const StrongText = styled.span`
-  font-weight:530;
+  font-weight:520;
 `
