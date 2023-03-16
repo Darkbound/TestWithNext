@@ -14,9 +14,9 @@ export const StyledCardTitle = styled((props) => <CardTitle {...props} />)`
 `
 
 export const StyledCardBoxContainer = styled(({ ...props }) => <CardBoxContainer {...props} />)`
+  display:flex;
   align-items:center;
   transition: all 0.5s ease-out;
-  display:flex;
   cursor:pointer;
   border: 2px solid ${({ isactive }) => isactive ? '#006efd' : 'transparent'};
 

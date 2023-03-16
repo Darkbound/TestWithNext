@@ -7,9 +7,10 @@ import { CardContainer } from "../../components/Containers";
 
 export const StyledImageContainer = styled.div`
   border-radius: .75rem;
+  padding-bottom: .5rem;
   overflow:hidden;
   position:relative;
-  width: clamp(370px,400px, 450px);
+  width: clamp(380px,410px, 450px);
   height:610px;
 `;
 
@@ -19,10 +20,10 @@ export const StyledContainer = styled((props) => <SectionContainer {...props} />
   text-align:center;
 `;
 export const StyledSectionContainer = styled(({ height, ...props }) => <SectionContainer {...props} />)`
-  padding-top:.75rem;
+  padding-top:4rem;
   justify-content:center;
   flex-wrap:wrap;
-  gap:60px;
+  gap:80px;
   background-image: url(${BackgroundImage?.src});
   background-repeat: no-repeat;
   background-position: -30px 50px;
@@ -39,5 +40,6 @@ export const StyledDescription = styled((props) => <SectionSubheading {...props}
 `;
 
 export const StyledCardContainer = styled((props) => <CardContainer {...props} />)`
+  padding-top:2rem;
   height:100%;
 `

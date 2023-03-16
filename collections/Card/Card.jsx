@@ -27,7 +27,7 @@ export const Card = ({ activeSelection, changeActiveSelection, ...card }) => {
   return (
     <StyledCardBoxContainer isactive={isactive} onClick={() => changeActiveSelection(card.title)}>
       < StyledImageContainer >
-        <Image src={card.image.src} alt={card.image.alt} height={70} width={70} />
+        <Image src={card.image.src} alt={card.image.alt} height={60} width={60} />
       </StyledImageContainer >
       <StyledTextContainer>
         <StyledCardTitle>{card.title}</StyledCardTitle>
