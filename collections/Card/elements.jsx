@@ -18,11 +18,11 @@ export const StyledCardBoxContainer = styled(({ ...props }) => <CardBoxContainer
   transition: all 0.5s ease-out;
   display:flex;
   cursor:pointer;
-  border: 2px solid ${({ isActive }) => isActive ? '#006efd' : 'transparent'};
+  border: 2px solid ${({ isactive }) => isactive ? '#006efd' : 'transparent'};
 
   ${StyledCardTitle}{
     color: ${({ isActive }) => isActive ? '#006efd' : 'black'};
-    text-decoration: ${({ isActive }) => isActive ? 'underline' : 'none'};
+    text-decoration: ${({ isactive }) => isactive ? 'underline' : 'none'};
   }
   
   :hover{
