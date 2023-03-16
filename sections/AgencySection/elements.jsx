@@ -14,6 +14,7 @@ export const StyledImageContainer = styled.div`
 export const StyledContainer = styled((props) => <SectionContainer {...props} />)`
   display:grid;
   place-items:center;
+  text-align:center;
 `;
 export const StyledSectionContainer = styled(({ height, ...props }) => <SectionContainer {...props} />)`
   padding:25px;
