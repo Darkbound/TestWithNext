@@ -14,23 +14,20 @@ import Image from 'next/image'
 
 const firstCardProps = {
   title: 'Brief',
-  descriptionFirstHalf: 'Complete',
-  highlightedText: 'brief writing or simple guidance',
-  descriptionSecondHalf: 'on what to include, we`ve got you covered.',
+  description: 'Complete brief writing or simple guidance on what to include, we`ve got you covered. ',
+  highlightedSentences: ['brief writing or simple guidance'],
   image: { src: "/img/workbench.svg", alt: "workbench icon", },
 }
 const secondCardProps = {
   title: 'Search',
-  descriptionFirstHalf: 'In-depth agency search covering;',
-  highlightedText: 'criteria matching,',
-  descriptionSecondHalf: 'door knocking and due-dilligence vetting.',
+  description: 'In-depth agency search covering; criteria matching, door knocking and due-dilligence vetting.',
+  highlightedSentences: ['criteria matching,'],
   image: { src: "/img/presentation.svg", alt: "workbench icon", },
 }
 const thirdCardProps = {
   title: 'Pitch',
-  descriptionFirstHalf: 'Comprehensive',
-  highlightedText: 'pitch management',
-  descriptionSecondHalf: 'including comms, diary management and pitch hosting.',
+  description: 'Comprehensive pitch management including comms, diary management and pitch hosting.',
+  highlightedSentences: ['pitch management'],
   image: { src: "/img/talking.svg", alt: "workbench icon", },
 }
 

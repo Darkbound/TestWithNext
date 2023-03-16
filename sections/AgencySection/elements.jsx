@@ -6,6 +6,8 @@ import BackgroundImage from '../../resources/background.png'
 import { CardContainer } from "../../components/Containers";
 
 export const StyledImageContainer = styled.div`
+  border-radius: .75rem;
+  overflow:hidden;
   position:relative;
   width: clamp(370px,400px, 450px);
   height:610px;
@@ -17,7 +19,7 @@ export const StyledContainer = styled((props) => <SectionContainer {...props} />
   text-align:center;
 `;
 export const StyledSectionContainer = styled(({ height, ...props }) => <SectionContainer {...props} />)`
-  padding:25px;
+  padding-top:.75rem;
   justify-content:center;
   flex-wrap:wrap;
   gap:60px;
@@ -33,6 +35,7 @@ export const StyledTitle = styled((props) => <SectionBigHeading {...props} />)`
 `;
 export const StyledDescription = styled((props) => <SectionSubheading {...props} />)`
   margin: 0;
+  font-size: 1.5rem;
 `;
 
 export const StyledCardContainer = styled((props) => <CardContainer {...props} />)`

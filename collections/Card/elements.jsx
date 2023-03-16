@@ -9,11 +9,12 @@ import {
 
 export const StyledCardTitle = styled((props) => <CardTitle {...props} />)`
   transition: all 0.5s ease-out;
-  margin-top:20px;
-  margin-bottom:0;
+  font-weight:550;
+  margin:0
 `
 
 export const StyledCardBoxContainer = styled(({ ...props }) => <CardBoxContainer {...props} />)`
+  align-items:center;
   transition: all 0.5s ease-out;
   display:flex;
   cursor:pointer;
@@ -33,19 +34,22 @@ export const StyledCardBoxContainer = styled(({ ...props }) => <CardBoxContainer
   }
 `
 export const StyledImageContainer = styled.div`
+  padding:2.5rem; 
   align-items:center;
   display:flex;
-  min-width:50px;
-  height:100%;
-  margin-left:45px;
-  margin-right:45px;
+  min-width:60px;
+  height:60px;
 `
+
 export const StyledTextContainer = styled((props) => <CardTextContainer {...props} />)`
+padding-right:5em;
+padding-top:1rem;
 `
+
 export const StyledCardDescription = styled((props) => <CardDescription{...props} />)`
-  margin:0;
-  margin-right:20px;
-  padding-top:10px;
+  line-height: 1.5;
+  margin-top:.35em;
+  font-size:1.05rem
 `
 export const StrongText = styled.span`
   font-weight:bold;

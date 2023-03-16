@@ -25,7 +25,6 @@ export default function Home() {
         />
       </head>
       <div>
-        <Hero {...heroProps} />
         <AgencySection {...agencySectionProps} />
       </div>
     </>
