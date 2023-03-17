@@ -21,7 +21,7 @@ export const StyledCardBoxContainer = styled(({ ...props }) => <CardBoxContainer
   border: 2px solid ${({ isactive }) => isactive ? '#006efd' : 'transparent'};
 
   ${StyledCardTitle}{
-    color: ${({ isActive }) => isActive ? '#006efd' : 'black'};
+    color: ${({ isactive }) => isactive ? '#006efd' : 'black'};
     text-decoration: ${({ isactive }) => isactive ? 'underline' : 'none'};
   }
   
