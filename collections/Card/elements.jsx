@@ -46,17 +46,8 @@ padding-top:1rem;
 `
 
 export const StyledCardDescription = styled((props) => <CardDescription{...props} />)`  
-  padding-right:3.6rem;
+  padding-right:3.1rem;
   line-height: 1.5;
   margin-top:.35em;
   font-size:1.05rem
-`
-export const SpecialChar = styled.span`
-  font-weight:normal;
-  font-size:1.05rem;
-  line-height: 1.5;
-`
-
-export const StrongText = styled.span`
-  font-weight:520;
 `

@@ -10,7 +10,7 @@ export const StyledImageContainer = styled.div`
   padding-bottom: .5rem;
   overflow:hidden;
   position:relative;
-  width: clamp(380px,410px, 450px);
+  width: clamp(340px,350px, 370px);
   height:610px;
 `;
 
@@ -20,7 +20,7 @@ export const StyledContainer = styled((props) => <SectionContainer {...props} />
   text-align:center;
 `;
 export const StyledSectionContainer = styled(({ height, ...props }) => <SectionContainer {...props} />)`
-  padding-top:4rem;
+  padding:2rem 0 ;
   justify-content:center;
   flex-wrap:wrap;
   gap:80px;
@@ -31,6 +31,7 @@ export const StyledSectionContainer = styled(({ height, ...props }) => <SectionC
 `;
 
 export const StyledTitle = styled((props) => <SectionBigHeading {...props} />)`
+  font-size:2.5rem;
   margin:0;
   color: black;
 `;

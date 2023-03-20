@@ -4,8 +4,6 @@ import {
   StyledImageContainer,
   StyledTextContainer,
   StyledCardDescription,
-  StrongText,
-  SpecialChar
 } from "./elements";
 
 import Image from 'next/image'
@@ -13,16 +11,8 @@ import Image from 'next/image'
 
 export const Card = ({ activeSelection, changeActiveSelection, ...card }) => {
   const isactive = card.title === activeSelection ? true : undefined
-  const { highlightedIndexes, description } = card
 
-  const MappedDescription = description.split(' ')
-  const shouldBeBold = (idx) => highlightedIndexes.includes(idx)
-
-  const BoldText = ({ validWord }) => {
-    const wordString = validWord.split('')
-    const mappedWord = wordString.map((word) => word.match(/\W|_/g) ? <SpecialChar>{word} </SpecialChar> : word)
-    return (<StrongText>{mappedWord}{" "}</StrongText>)
-  }
+  const description = card.description.split('*')
 
   return (
     <StyledCardBoxContainer isactive={isactive} onClick={() => changeActiveSelection(card.title)}>
@@ -32,7 +22,11 @@ export const Card = ({ activeSelection, changeActiveSelection, ...card }) => {
       <StyledTextContainer>
         <StyledCardTitle>{card.title}</StyledCardTitle>
         <StyledCardDescription>
-          {MappedDescription.map((word, idx) => shouldBeBold(idx) ? <BoldText validWord={word} /> : word + ' ')}
+          {description.map((text, index) => (
+            <>
+              {index % 2 === 1 ? <b key={index}>{text}</b> : text}
+            </>
+          ))}
         </StyledCardDescription>
       </StyledTextContainer>
     </StyledCardBoxContainer >
