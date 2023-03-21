@@ -10,7 +10,7 @@ export const StyledImageContainer = styled.div`
   padding-bottom: .5rem;
   overflow:hidden;
   position:relative;
-  width: clamp(340px,350px, 370px);
+  width: clamp(320px,350px, 370px);
   height:550px;
 `;
 
@@ -26,7 +26,7 @@ export const StyledSectionContainer = styled(({ height, ...props }) => <SectionC
   gap:80px;
   background-image: url(${BackgroundImage?.src});
   background-repeat: no-repeat;
-  background-position: -30px 50px;
+  background-position: -20px 50px;
   background-size:950px;
 `;
 
