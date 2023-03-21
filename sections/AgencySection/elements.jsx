@@ -11,7 +11,7 @@ export const StyledImageContainer = styled.div`
   overflow:hidden;
   position:relative;
   width: clamp(340px,350px, 370px);
-  height:610px;
+  height:550px;
 `;
 
 export const StyledContainer = styled((props) => <SectionContainer {...props} />)`
